@@ -65,6 +65,7 @@ def hyper_parameter_tuning(X,y,model,params_common,params_gs,scoring='f1_macro',
 		Number of jobs to run in parallel. None means 1. -1 means use all.
 	Returns
 	-------
+ 	clf : object
 	"""	
 	if model == "SVC":
 		m = svm.SVC(**params_common)
